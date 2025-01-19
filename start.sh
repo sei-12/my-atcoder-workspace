@@ -12,7 +12,7 @@ cd $CONTENTS_DIR
 echo -n "contest name: "
 read CONTEST_NAME
 
-acc new $CONTEST_NAME
+acc new --choice all $CONTEST_NAME
 cd $CONTEST_NAME
 code .
 cp ../../run-test.py .
