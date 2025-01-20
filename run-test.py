@@ -9,14 +9,14 @@ def read_file(path):
     with open(path) as f: 
         return f.read()
 
-def write_fault_test_result(test_case,god,expect):
+def write_fault_test_result(test_case,got,expect):
     with open("./result.txt","a") as f:
         f.write(
 f"""
 {"=" * 100}
 {test_case} {datetime.datetime.now().time()}
 {"=" * 100}
-{god}
+{got}
 
 
 """
