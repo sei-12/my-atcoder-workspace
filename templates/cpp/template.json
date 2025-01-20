@@ -7,9 +7,9 @@
     "contest":{
         "static": [
             ".vscode",
-            "copy-code.py",
-            "mylib",
+            "test.py",
             "submit.py"
-        ]
+        ],
+        "cmd": "ln -s ../../lib/cpp/mylib ."
     }
 }
