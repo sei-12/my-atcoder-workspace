@@ -1,0 +1,15 @@
+{
+    "task": {
+        "program": ["main.cpp"],
+        "testdir": "test",
+        "submit": "main.cpp"
+    },
+    "contest":{
+        "static": [
+            ".vscode",
+            "copy-code.py",
+            "mylib",
+            "submit.py"
+        ]
+    }
+}
