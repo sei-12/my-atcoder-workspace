@@ -1,2 +1,5 @@
 target/
 src/main.rs
+.tests/
+data.json
+result.txt
