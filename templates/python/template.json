@@ -2,6 +2,7 @@
     "task": {
         "program": ["main.py"],
         "testdir": "test",
+        "static": [".vscode","run-test.py"],
         "submit": "main.py"
     }
 }

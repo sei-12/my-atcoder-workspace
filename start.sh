@@ -15,7 +15,3 @@ read CONTEST_NAME
 acc new --choice all $CONTEST_NAME
 cd $CONTEST_NAME
 code .
-cp ../../run-test.py .
-cp -r ../../.vscode .
-
-# cp ../../submit.sh .
