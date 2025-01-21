@@ -4,5 +4,7 @@
 use proconio::{input, marker::Chars};
 
 fn main() {
-
+    input! {
+        S: Chars
+    }
 }
