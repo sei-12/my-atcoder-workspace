@@ -1,12 +1,8 @@
 #![allow(non_snake_case)]
 #![allow(unused)]
 
-use proconio::input;
+use proconio::{input, marker::Chars};
 
 fn main() {
-    input! {
-        S: String,
-    }
 
-    println!("Hello, world!");
 }
