@@ -1,9 +1,8 @@
 #!/bin/bash
 
-echo -n "task:"
-read task
+echo -n "name:"
+read name
 
-contest_id=$(cat ./data.json | jq ".contest_id" -r)
-file_path=".archive/$(date '+%Y-%m-%d-%H-%M-%S')-$contest_id-$task.rs"
-
+file_path=".archive/$name.rs"
 cat ./src/main.rs > $file_path
+cat ./src/template.main.rs > ./src/main.rs
