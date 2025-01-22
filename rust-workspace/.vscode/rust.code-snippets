@@ -1,6 +1,6 @@
 {
     "factorial": {
-        "prefix": "factorial",
+        "prefix": "factorial atcoder",
         "body": [
             "fn factorial(num: usize) -> usize {",
             "    match num {",
@@ -11,6 +11,6 @@
             "}",
             ""
         ],
-        "description": "階乗 factorial"
+        "description": "階乗 factorial 競プロ用スニペット"
     }
 }
