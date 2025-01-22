@@ -12,6 +12,7 @@ use std::{
 
 fn main() {
     input! {
-        S: Chars
+        N: usize,
+        A: [usize; N],
     }
 }
