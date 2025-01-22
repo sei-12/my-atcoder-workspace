@@ -71,8 +71,6 @@ def compile():
     )
 
 def main():
-    task=input("task:")
-    download_test(task)
     num_tests = int(get_num_tests())
 
     compile()
@@ -81,28 +79,6 @@ def main():
     for i in range(1,num_tests + 1):
         check_test(f".tests/sample-{i}.in",f".tests/sample-{i}.out",bin_file)
 
-def download_test(task):
-    data = {}
-    with open("./data.json") as f:
-        data = json.load(f)
-    
-    url = f"https://atcoder.jp/contests/{data["contest_id"]}/tasks/{data["contest_id"]}_{task}"
-
-    subprocess.run(["rm", "-r",".tests"])
-    os.mkdir(".tests")
-
-    cp = subprocess.run(
-        ["oj","download","-d", ".tests/",url],
-        encoding='UTF-8',
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
-    
-    if cp.returncode == 0:
-        print(green_s("success download tests!"))
-    else:
-        print(green_s("fail download tests!"))
-        print(cp.stdout,cp.stderr)
 
 if __name__ == "__main__":
     main()
