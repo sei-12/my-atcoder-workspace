@@ -1,0 +1,16 @@
+{
+    "factorial": {
+        "prefix": "factorial",
+        "body": [
+            "fn factorial(num: usize) -> usize {",
+            "    match num {",
+            "        0 => 1,",
+            "        1 => 1,",
+            "        _ => factorial(num - 1) * num,",
+            "    }",
+            "}",
+            ""
+        ],
+        "description": "階乗 factorial"
+    }
+}
