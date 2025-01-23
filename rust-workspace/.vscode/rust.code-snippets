@@ -12,5 +12,40 @@
             ""
         ],
         "description": "階乗 factorial 競プロ用スニペット"
+    },
+    "CharIndex": {
+        "prefix": "CharIndex atcoder",
+        "body": [
+            "/// Example",
+            "/// ```",
+            "/// let ch_idx = CharIndex::new(\"chokudai\");",
+            "/// assert_eq!(ch_idx.get('c'),Some(0));",
+            "/// assert_eq!(ch_idx.get('h'),Some(1));",
+            "/// assert_eq!(ch_idx.get('o'),Some(2));",
+            "/// assert_eq!(ch_idx.get('w'),None);",
+            "/// ```",
+            "/// ",
+            "struct CharIndex {",
+            "    hash_map: HashMap<char,usize>    ",
+            "}",
+            "impl CharIndex {",
+            "    fn new(val: &str) -> Self {",
+            "        let mut hash_map = HashMap::new();",
+            "        for (i,c) in val.chars().enumerate() {",
+            "            hash_map.insert(c, i);",
+            "        }",
+            "        Self { hash_map }",
+            "    }",
+            "",
+            "    fn get(&self,ch: char) -> Option<usize>{",
+            "        match self.hash_map.get(&ch) {",
+            "            Some(index) => Some(*index),",
+            "            None => None",
+            "        }",
+            "    }",
+            "}",
+            ""
+        ],
+        "description": "CharIndex"
     }
 }
