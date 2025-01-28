@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ../venv/bin/activate
+source ./venv/bin/activate
 echo -n "task: "
 read task
 
