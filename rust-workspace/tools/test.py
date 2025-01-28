@@ -11,7 +11,7 @@ def read_file(path):
         return f.read()
 
 def write_fault_test_result(test_case,got,expect):
-    with open("./result.txt","a") as f:
+    with open("./result.txt","w") as f:
         f.write(
 f"""
 {"=" * 100}
