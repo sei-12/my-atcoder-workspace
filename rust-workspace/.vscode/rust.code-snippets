@@ -128,5 +128,21 @@
             ""
         ],
         "description": "crop_array"
+    },
+    "print_vec": {
+        "prefix": "print_vec atcoder",
+        "body": [
+            "fn print_vec<T: std::fmt::Display>(v: Vec<T>) {",
+            "    for (i,a) in v.iter().enumerate() {",
+            "        if i == v.len() - 1 {",
+            "            println!(\"{}\",a)",
+            "        }else{",
+            "            print!(\"{} \",a)            ",
+            "        }",
+            "    }",
+            "}",
+            ""
+        ],
+        "description": "print_vec"
     }
 }
