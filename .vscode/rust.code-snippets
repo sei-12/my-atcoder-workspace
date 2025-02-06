@@ -158,5 +158,19 @@
             ""
         ],
         "description": "gcd"
+    },
+    "bit全探索": {
+        "prefix": "bit atcoder",
+        "body": [
+            "for b in 1..1<<N {",
+            "    for i in 0..N {",
+            "        if b >> i & 0x01 == 1 {",
+            "        }else{",
+            "        }",
+            "    }",
+            "}",
+            ""
+        ],
+        "description": "bit全探索"
     }
 }
