@@ -8,12 +8,6 @@ use proconio::{
 };
 use std::collections::{BinaryHeap, HashMap, VecDeque};
 
-#[rustfmt::skip]
-fn max<T: Ord>(a: T, b: T) -> T { if a > b { a } else { b } }
-#[rustfmt::skip]
-fn min<T: Ord>(a: T, b: T) -> T { if a < b { a } else { b } }
-
-
 fn main() {
     input! {
         N: usize,
